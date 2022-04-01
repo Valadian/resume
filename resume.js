@@ -516,10 +516,19 @@ function ResumeModel(){
             this.name = ko.observable(kvp[0])
             this.count = ko.observable(kvp[1])
             this.active = ko.observable(false)
-            this.bgStyle = ko.computed(() => bgStyle + (this.active()?" btn-toplevel-active":" btn-filter-inactive"))
+            this.bgStyle = ko.pureComputed(() => bgStyle + (this.active()?" btn-toplevel-active":" btn-filter-inactive"))
             this.click = () => this.active(!this.active())
         }()))
     },this)
+
+    this.sort_labels = function(label_names){
+        var prios = this.labelpriorities();
+        var labels = koModel.alllabels().filter(l => label_names.includes(l.name()))
+        labels.sort((function(first, second) {
+            return (prios[first.name()]==prios[second.name()]) ? second.count() - first.count() : prios[first.name()] - prios[second.name()];
+        }));
+        return labels.map(l => l.name());
+    }
     
     this.alllabels_butlangandtech = ko.pureComputed(function(){
         return this.alllabels().filter(label => !(label.name().startsWith("Language") || label.name().startsWith("Technology")))
@@ -538,14 +547,20 @@ function ResumeModel(){
         this.name= ko.observable("Technologies")
         this.count = koModel.numLanguagesAndTechnologies
         this.active = ko.observable(false)
-        this.bgStyle = ko.computed(() => "bg-danger" + (this.active()?" btn-toplevel-active":""))
+        this.bgStyle = ko.pureComputed(() => "bg-danger" + (this.active()?" btn-toplevel-active":""))
         this.click = () => this.active(!this.active())
     }()
     this.technologies = ko.pureComputed(function(){
         return this.alllabels().filter(label => label.name().startsWith("Technology"));
     },this)
+    this.TECHNOLOGY_LABELS = ko.pureComputed(function(){
+        return this.technologies().map(l => l.name())
+    },this)
     this.languages = ko.pureComputed(function(){
         return this.alllabels().filter(label => label.name().startsWith("Language"));
+    },this)
+    this.LANGUAGE_LABELS = ko.pureComputed(function(){
+        return this.languages().map(l => l.name())
     },this)
     this.technologyBtn.active.subscribe(function(value){
         if (value==false){
@@ -568,7 +583,7 @@ function ResumeModel(){
         this.name= ko.observable("Accomplishments")
         this.count = koModel.numAccomplishment
         this.active = ko.observable(false)
-        this.bgStyle = ko.computed(() => "bg-warning text-dark" + (this.active()?" btn-toplevel-active":""))
+        this.bgStyle = ko.pureComputed(() => "bg-warning text-dark" + (this.active()?" btn-toplevel-active":""))
         this.click = () => this.active(!this.active())
     }()
     this.accomplishmentBtn.active.subscribe(function(value){
@@ -587,7 +602,7 @@ function ResumeModel(){
         this.name= ko.observable("Leadership")
         this.count = koModel.numLeadership
         this.active = ko.observable(false)
-        this.bgStyle = ko.computed(() => "bg-success" + (this.active()?" btn-toplevel-active":""))
+        this.bgStyle = ko.pureComputed(() => "bg-success" + (this.active()?" btn-toplevel-active":""))
         this.click = () => this.active(!this.active())
     }()
     this.leadershipBtn.active.subscribe(function(value){
@@ -606,7 +621,7 @@ function ResumeModel(){
         this.name= ko.observable("Design")
         this.count = koModel.numDesign
         this.active = ko.observable(false)
-        this.bgStyle = ko.computed(() => "bg-info" + (this.active()?" btn-toplevel-active":""))
+        this.bgStyle = ko.pureComputed(() => "bg-info" + (this.active()?" btn-toplevel-active":""))
         this.click = () => this.active(!this.active())
     }()
     this.designBtn.active.subscribe(function(value){
@@ -632,7 +647,7 @@ function ResumeModel(){
         this.name= ko.observable("Domains")
         this.count = koModel.numDomains
         this.active = ko.observable(false)
-        this.bgStyle = ko.computed(() => "bg-primary" + (this.active()?" btn-toplevel-active":""))
+        this.bgStyle = ko.pureComputed(() => "bg-primary" + (this.active()?" btn-toplevel-active":""))
         this.click = () => this.active(!this.active())
     }()
     this.domainBtn.active.subscribe(function(value){
@@ -647,7 +662,6 @@ function ResumeModel(){
         this.domainBtn,
         this.accomplishmentBtn
     ])
-    this.activeDomain
     this.labelToBg = function(label){
         if (this.ACCOMPLISHMENT_LABELS.includes(label)){
             return "bg-warning text-dark"
@@ -669,6 +683,23 @@ function ResumeModel(){
         }
         return "bg-primary"
     }
+    this.labelgroups = ko.observableArray([
+        this.LEADERSHIP_LABELS,
+        this.DESIGN_LABELS,
+        this.TECHNOLOGY_LABELS(),
+        this.LANGUAGE_LABELS(),
+        this.DOMAIN_LABELS,
+        this.ACCOMPLISHMENT_LABELS
+    ])
+    this.labelpriorities = ko.pureComputed(function(){
+        var groups_prios = {}
+        for (var priority in this.labelgroups()){
+            for(var label of this.labelgroups()[priority]){
+                groups_prios[label] = priority
+            }
+        }
+        return groups_prios
+    },this)
 }
 loadData = function(){
     ko.options.deferUpdates = true
