@@ -18,11 +18,37 @@
     </head>
 
     <body>
-        <main role="main" class="container-fluid">
-            <div>
-                <div>
+        <main role="main" class="container pt-3">
+            <div class="d-md-none">
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <img class="rounded" src="JesseBerger.jpg" height="200px" style="border-radius: 9rem!important;">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h1>Jesse Berger</h1>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h3>Principal Software Engineer</h3>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h5>admin@jesseberger.me</h5>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <h5>352-601-2231</h5>
+                </div>
+            </div>
+            <div class="d-none d-md-flex">
+                <div class="d-shrink-1">
+                    <div>
+                        <img class="rounded" src="JesseBerger.jpg" height="200px" style="border-radius: 9rem!important;">
+                    </div>
+                </div>
+                <div class="d-grow-1 pt-3 pl-3">
                     <h1>Jesse Berger</h1>
                     <h3>Principal Software Engineer</h3>
+                    <h5>admin@jesseberger.me</h5>
+                    <h5>352-601-2231</h5>
                 </div>
             </div>
             <div class="row mb-10">
@@ -35,6 +61,29 @@
                 <div > <!--class="col-12 col-xxl-10 col-xl-9 col-lg-8"-->
                     <div class="row">
                         <div class="col-12 "><!-- col-xxl-6 -->
+                            <div class="card mt-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span><i class="bi bi-person"></i> Introduction</span>
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#intro-card-body" aria-expanded="false" aria-controls="collapseExample">
+                                        Toggle
+                                      </button>
+                                </div>
+                                <div class="card-body collapse show" id="intro-card-body" style="margin-bottom: -35px;">
+                                    <p>Senior Software Engineer with a long diverse history in <b>Full Stack web</b> and simulation development in 
+                                        challenging environments across the Aerospace industry. Have supported many of the most <b>complex vehicles 
+                                        and systems</b> in Aerospace: International Space Station, CST-100 Starliner, Nasa Docking System, Orion, 
+                                        Lunar Gateway, and  Human Lunar Lander. <b>15 years</b> of Full Stack development history, 13 of those as <b>project 
+                                        lead</b>, the last 3 years at the <b>program management</b> level interfacing with the customer and managing multi- 
+                                        million dollar projects comprising of <b>20+ software engineers</b>. I am passionate about how to successfully 
+                                        execute on software engineering projects while <b>continuously iterating on processes</b> and tools to reduce cost, 
+                                        increasing developer capacity, and refining <b>software quality</b>. <br><br>
+                                        Beyond my development experience, my core competency 
+                                        is in customer <b>requirements elicitation</b> and inferring <b>developer intention</b>.This has proven invaluable in getting 
+                                        the right understanding of customer requirements during Rapid Application Development, and in catching 
+                                        misunderstandings during early prototyping, instead of later during product testing.<br><br>
+                                        From a Technologies perspective, my core competencies are <b>System Integration</b>, <b>Full Stack Web</b>, <b>Databases</b>, <b>Machine Learning</b>, <b>VR/AR</b>, & <b>Simulations</b></p><br>
+                                </div>
+                            </div>
                             <div class="card mt-3">
                                 <div class="card-header d-flex justify-content-between">
                                     <span><i class="bi bi-mortarboard"></i> Education</span>
@@ -72,9 +121,9 @@
                                     </button> -->
                                     <div data-bind="visible: leadershipBtn.active, template: {name: 'label-btn-template', foreach: leadership}"></div>
                                     <div data-bind="visible: designBtn.active, template: {name: 'label-btn-template', foreach: design}"></div>
-                                    <div data-bind="visible: domainBtn.active, template: {name: 'label-btn-template', foreach: domains}"></div>
                                     <div data-bind="visible: technologyBtn.active, template: {name: 'label-btn-template', foreach: technologies}"></div>
                                     <div data-bind="visible: technologyBtn.active, template: {name: 'label-btn-template', foreach: languages}"></div>
+                                    <div data-bind="visible: domainBtn.active, template: {name: 'label-btn-template', foreach: domains}"></div>
                                     <div data-bind="visible: accomplishmentBtn.active, template: {name: 'label-btn-template', foreach: accomplishments}"></div>
                                 </div>
                                 <div class="card-body collapse show" id="experience-card-body">
