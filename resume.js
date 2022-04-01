@@ -141,17 +141,19 @@ function ResumeModel(){
         BuildEntry({
             start:'Early 2022',
             title:'Johnson Space Center Individual Innovation Award',
-            text:' awarded for use of ISS RFID Machine Learning models to support on orbit Logistics operations performed by Astronauts.',
+            text:'Recognized for my Individual contributions as the chief Machine Learning architect for the RFID Logistics program on the International Space Station. Models are leveraged in real-time operations with Astronauts while performing cargo related duties to locate unexpected missing items required for cargo manifest and scientific experiments.',
             labels: ['Accomplishments','Technology:Machine Learning']}),
         // BuildEntry({
         //     start:'Late 2021',
         //     title:'Implementation of real-time GPS orbital model leveraging General/Special Relativity',
         //     text:'',
+        //     extended: 'Needed to build a real-time GPS satellite simulation leveraging minimal external library dependencies for commercial agriculture vehicle simulation. Implemented orbital propagation model for real world observed parameters, and implemented Special and General Relativity Time dilation effects to correctly calculated frequency offsets required for GPS communication',
         //     labels: ['Language:Python','Language:Go','Simulation']}),
         BuildEntry({
             start:'Early 2021',
-            title:'Astrobee Homing Algorithm utilized in space on International Space Station to autonomously track RFID tag!',
-            text:'',
+            stop:'Present',
+            title:'Autonomous Algorithm utilized by Astrobee Robot onboard International Space Station to track RFID tag!',
+            text:'Algorithm and autonomous control code that I had written in 2019 had its maiden flight on the International Space Station. Experiment was set up by Astronaut Shannon Walker, and successfully met all test objectives. Results of that test was utilized to improve algorithm leading to a highly successful test in early 2022 culminating to robot navigating and touching target across a module. More details below. ',
             labels: ['Accomplishments','Technology:Robotic Operating System','Language:C++','Language:Java']}),
         BuildEntry({
             start:'Early 2021',
