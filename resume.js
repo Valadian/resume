@@ -143,16 +143,16 @@ function ResumeModel(){
             title:'Johnson Space Center Individual Innovation Award',
             text:' awarded for use of ISS RFID Machine Learning models to support on orbit Logistics operations performed by Astronauts.',
             labels: ['Accomplishments','Technology:Machine Learning']}),
-        BuildEntry({
-            start:'Late 2021',
-            title:'Implementation of real-time GPS orbital model leveraging General/Special Relativity',
-            text:'',
-            labels: ['Language:Python','Language:Go','Simulation']}),
+        // BuildEntry({
+        //     start:'Late 2021',
+        //     title:'Implementation of real-time GPS orbital model leveraging General/Special Relativity',
+        //     text:'',
+        //     labels: ['Language:Python','Language:Go','Simulation']}),
         BuildEntry({
             start:'Early 2021',
-            title:'Astrobee <b>Homing Algorithm</b> utilized <b>in space</b> on ISS to autonomously track RFID tag!',
+            title:'Astrobee Homing Algorithm utilized in space on International Space Station to autonomously track RFID tag!',
             text:'',
-            labels: ['Language:C++','Accomplishments']}),
+            labels: ['Accomplishments','Technology:Robotic Operating System','Language:C++','Language:Java']}),
         BuildEntry({
             start:'Early 2021',
             title:'IEEE Conference Publication',

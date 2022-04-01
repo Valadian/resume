@@ -89,7 +89,7 @@
         <div style="height:1000px"></div>
     </body>
     <script type="text/html" id="label-btn-template">
-        <button type="button" class="btn mb-1" data-bind="class:bgStyle, click:click" >
+        <button type="button" class="btn btn-sm mb-1" data-bind="class:bgStyle, click:click" >
             <span data-bind="text: name"></span>
             <span data-bind="text: count" class="badge bg-dark"></span>
         </button>
@@ -112,9 +112,9 @@
             
             <!-- /ko-->
             <div class="d-flex justify-content-between">
-                <h3 data-bind="html: title"></h3>
+                <h4 data-bind="html: title"></h4>
                 <!-- ko if: location-->
-                <p data-bind="text: location"></p>
+                <p class="d-none d-md-block" data-bind="text: location"></p>
                 <!-- /ko-->
             </div>
             <p>
