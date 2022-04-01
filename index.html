@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js'></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="resume.js?version=2022_03_23"></script>
+        <link rel="stylesheet" href="resume.css?version=2022_03_23"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/bootstrap-dark.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <title>Jesse Berger Resume</title>
+    </head>
+
+    <body>
+        <main role="main" class="container-fluid">
+            <div>
+                <div>
+                    <h1>Jesse Berger</h1>
+                    <h3>Senior Principal Software Engineer</h3>
+                </div>
+            </div>
+            <div class="row mb-10">
+                <!-- <div class="col-12 col-xxl-2 col-xl-3 col-lg-4">
+                    <div class="card mt-3">
+                        <div class="card-body collapse show" id="load-card-body">
+                        </div>
+                    </div>
+                </div> -->
+                <div > <!--class="col-12 col-xxl-10 col-xl-9 col-lg-8"-->
+                    <div class="row">
+                        <div class="col-12 "><!-- col-xxl-6 -->
+                            <div class="card mt-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span><i class="bi bi-mortarboard"></i> Education</span>
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#education-card-body" aria-expanded="false" aria-controls="collapseExample">
+                                        Toggle
+                                      </button>
+                                </div>
+                                <div class="card-body collapse show" id="education-card-body" style="margin-bottom: -35px;">
+                                    <div data-bind="template: {name: 'entry-template', foreach: education}"></div>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-header d-flex justify-content-between">
+                                    <span><i class="bi bi-building"></i> Employment</span>
+                                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#employment-card-body" aria-expanded="false" aria-controls="collapseExample">
+                                        Toggle
+                                      </button>
+                                </div>
+                                <div class="card-body collapse show" id="employment-card-body" style="margin-bottom: -35px;">
+                                    <div data-bind="template: {name: 'entry-template', foreach: employment}"></div>
+                                </div>
+                            </div>
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    <i class="bi bi-list-columns-reverse"></i> Experience
+                                    
+                                    <span data-bind="template: {name: 'label-btn-template', foreach: topButtons}"></span>
+                                    <!-- <button type="button" class="btn btn-danger" >
+                                        <span>Technologies</span>
+                                        <span data-bind="text: numTechnologies" class="badge bg-dark"></span>
+                                    </button>
+                                    <button type="button" class="btn btn-danger" >
+                                        <span>Languages</span>
+                                        <span data-bind="text: numLanguages" class="badge bg-dark"></span>
+                                    </button> -->
+                                    <div data-bind="visible: leadershipBtn.active, template: {name: 'label-btn-template', foreach: leadership}"></div>
+                                    <div data-bind="visible: designBtn.active, template: {name: 'label-btn-template', foreach: design}"></div>
+                                    <div data-bind="visible: domainBtn.active, template: {name: 'label-btn-template', foreach: domains}"></div>
+                                    <div data-bind="visible: technologyBtn.active, template: {name: 'label-btn-template', foreach: technologies}"></div>
+                                    <div data-bind="visible: technologyBtn.active, template: {name: 'label-btn-template', foreach: languages}"></div>
+                                    <div data-bind="visible: accomplishmentBtn.active, template: {name: 'label-btn-template', foreach: accomplishments}"></div>
+                                </div>
+                                <div class="card-body collapse show" id="experience-card-body">
+                                    <div data-bind="template: {name: 'entry-template', foreach: experience_filtered}"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div style="height:1000px"></div>
+    </body>
+    <script type="text/html" id="label-btn-template">
+        <button type="button" class="btn mb-1" data-bind="class:bgStyle, click:click" >
+            <span data-bind="text: name"></span>
+            <span data-bind="text: count" class="badge bg-dark"></span>
+        </button>
+    </script>
+    <script type="text/html" id="entry-template">
+        <div class="clearfix mb-3 entry" data-bind="class: classes">
+            <span>
+                <p class="text-muted" >
+                    <span data-bind="visible: stop!=null, text: start+' → '+stop"></span>
+                    <span data-bind="visible: stop==null, text: start"></span>
+                    <span data-bind="visible: timespan, text: '('+timespan+')'"></span>
+                </p>
+                <!-- ko foreach: labels-->
+                    <span class="badge" data-bind="text:$data, class:$root.labelToBg($data)"></span>
+                <!-- /ko -->
+            </span>
+            <!-- ko if: image-->
+            <div class="float-start mr-3 image-container" data-bind="style: {'background-image':'url('+image+')'}">
+            </div>
+            
+            <!-- /ko-->
+            <div class="d-flex justify-content-between">
+                <h3 data-bind="html: title"></h3>
+                <!-- ko if: location-->
+                <p data-bind="text: location"></p>
+                <!-- /ko-->
+            </div>
+            <p>
+                <!-- ko foreach: text-->
+                <span data-bind="html: $data"></span>
+                <br>
+                <!-- /ko-->
+            </p>
+        </div>
+    </script>
+</html> 
