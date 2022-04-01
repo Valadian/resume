@@ -152,7 +152,7 @@ function ResumeModel(){
         BuildEntry({
             start:'Early 2021',
             stop:'Present',
-            title:'Autonomous Algorithm utilized by Astrobee Robot onboard International Space Station to track RFID tag!',
+            title:'Autonomous Algorithm controlling Astrobee Robot onboard International Space Station tracked RFID tag',
             text:'Algorithm and autonomous control code that I had written in 2019 had its maiden flight on the International Space Station. Experiment was set up by Astronaut Shannon Walker, and successfully met all test objectives. Results of that test was utilized to improve algorithm leading to a highly successful test in early 2022 culminating to robot navigating and touching target across a module. More details below. ',
             labels: ['Accomplishments','Technology:Robotic Operating System','Language:C++','Language:Java']}),
         BuildEntry({
