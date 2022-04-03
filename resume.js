@@ -163,7 +163,7 @@ function ResumeModel(){
             labels: ['Accomplishments','Technology:Machine Learning']}),
         BuildEntry({
             start:'March 2022',
-            title:'Software Process Lead',
+            title:'Software Process Lead - Commercial Projects',
             text:'Pulled into unaffiliated projects by company President to critique and define necessary software processes to build quality software for commercial customer',
             labels: ['Process Improvement']}),
         // BuildEntry({
@@ -206,7 +206,7 @@ function ResumeModel(){
         BuildEntry({
             start:'Late 2020',
             stop:'Present',
-            title:'Lunar Gateway Contract Task Lead',
+            title:'Contract Task Lead - NASA Lunar Gateway ',
             text:'Managing 5 Senior, and 3-4 mid career engineers supporting Lunar Gateway Integration Tasks',
             extended:['Contract Task Order lead and manager of $1-5 million/yr Task Order. Ensured team largely consisting of Sr. Engineers were meeting Contractual Obligations defined in Task Order, led daily tagups, managed schedules, task prioritization, and ensured technical risks were identified and mitigated early. Outside of my technical role, I continued being primary User Interface Developer for the Integrated Lunar Gateway Engineering Simulation platform. This task consisted of significant exposure and integration with commercial and international partners from Maxar, Northrop, JAXA, ESA, CSA. Task grew substantially under my leadership, leading it to be separated from the below mentioned Exploration Systems Simulation Task Order.<br>',
                 'Managed 9 engineers doing:',
@@ -220,21 +220,21 @@ function ResumeModel(){
         BuildEntry({
             start:'Early 2020',
             stop:'Present',
-            title:'Lunar Gateway engineering integration - Lead User Interface and Lab Orchestration Developer',
+            title:'User Interface and Integration Lead - Lunar Gateway',
             text:'Lead Integrator and User Interface Designer for the Lunar Gateway integrated simulation platform',
             extended:'Working with NASA Lab Managers, Commercial Partners (Maxar, Northrop Grumman), and international partners (JAXA, ESA, CSA) to instrument simulations for use in a common orchestrated lab environment',
             labels:['Language:Javascript','Language:Php','Language:C++','Language:Go','Current','Leadership','Hardware/Software Integration','Simulation','Infrastructure','UI Design']}),
         BuildEntry({
             start:'Early 2020',
             stop:'Late 2020',
-            title:'NASA Exploration Systems Simulation Contract Task Lead',
+            title:'Contract Task Lead - NASA Exploration Systems Simulation ',
             text:'Managing 8 developers performing core simulation development tasks',
             extended:'Contract Task Order lead and manager of 8 member team working on Exploration Systems Simulation and Lunar Gateway simulation. Coordinated communication and monthly reports with our NASA interface. Ensured the team was meeting our contractual obligations. Provided technical expertise in 3d Graphics, Databases, and Web Architectures.',
             labels:['Leadership','Simulation']}),
         BuildEntry({
             start:'Early 2020',
             stop:'Present',
-            title:'Became REALM Chief Machine Learning Engineer and Algorithm Developer',
+            title:'Chief Architect - REALM Machine Learning and Algorithm Development',
             text:'Random Forest, XGBoost, Feature decomposition, pipeline generation for RFID localization',
             extended:['Led RFID Enabled Autonomous Logistics Management (REALM) Algorithm development as part of our Complex Event Processor (CEP) Toolchain. Was first to utilize machine learning algorithms to solve signal strength to Rack Location classification, leveraged that into a reusable Machine Learning toolchain for our RFID readings database, and brought other developers up to speed to be able to continue and expand the ground work I created. This work is one of <b>the only operational uses of Machine Learning on a daily basis in Mission Control</b> in the direction  of astronaut activities.',
                      'Initial work consisted of using >30 billion RFID reads, integrating with manually entered Inventory Management System (IMS) data, and training a Random Forest to classify Rack (42”x84”) locations. Supported development of continued work building a Image Recognition/CNN Deep Learning engine (extending ResNet50). Develop methods to ensemble the results and present them through a web interface for consumption by Mission Control Center (MCC) Inventory Stowage Officers (ISOs).'],
@@ -261,7 +261,7 @@ function ResumeModel(){
         BuildEntry({
             start:'Late 2019',
             stop:'Present',
-            title:'Became REALM Ground Sofware Co-Lead',
+            title:'Contract Task Co-Lead - REALM Ground Sofware',
             text:['Managing 12 developers',
                   '• Interfacing with International Space Station (ISS) Inventory Stowage Officers (ISOs)',
                   '• REALM-1 transition from a science payload to an ISS operational system.'],
@@ -293,7 +293,7 @@ function ResumeModel(){
             labels:['Language:C#','Technology:Unity3d','AR/VR']}),
         BuildEntry({
             start:'Late 2018',
-            title:'Chief Technical Risk Mitigation Engineer for Next Generation agricultural hardware/software emulation platform',
+            title:'Chief Technical Risk Mitigation Engineer - Next Generation agricultural hardware/software emulation platform',
             text:'CAN bus, android emulation, performance optimization',
             extended:'Brought on in the middle of the project lifecycle to provide surge technical expertise to resolve previously insurmountable technical problems. Consisted of hardware/display emulation for Tractor displays and integration/emulation of CAN bus communication. Many of the issues were related to resolving performance issues related to hardware/gpu emulation.',
             labels:['Language:Java','Technology:Android','Risk Mitigation','Simulation']}),
@@ -306,7 +306,7 @@ function ResumeModel(){
         BuildEntry({
             start:'Early 2018',
             stop:'Present',
-            title:'Became REALM Team’s Chief Technical Architect',
+            title:'Chief Architect - REALM Autonomous Robotics',
             text:['cross compilation build process for class 1E flight software'],
             extended:['Led technical efforts involving cross compilation to arm hardware under class 1E flight software requirements. Led development effort for Android based Astrobee Free Flying robot software utilizing CrystaX Native Development Kit (NDK)<br>',
                     'Technical leadership of project started with a Tiger team of Sr. Metecs`s Developers saving the project from the previous contractor.'],
@@ -314,7 +314,7 @@ function ResumeModel(){
         BuildEntry({
             start:'Early 2018',
             stop:'Present',
-            title:'Became a Metecs Recruiter and Primary Candidate Interviewer',
+            title:'Metecs Recruiter and Primary Candidate Interviewer',
             text:['• Technical Interview of Candidates',
                   '• Lead Career Fair Booth, resume filtering, and follow up interviews'],
             extended:'Reviewed hundreds of resumes, led dozens on dozens of technical interviews to identify qualified software engineering candidates. Worked with other recruiters to establish a consistent process and method to normalize scoring methods.',
@@ -349,13 +349,13 @@ function ResumeModel(){
         BuildEntry({
             start:'Late 2017',
             stop: 'Present',
-            title:'Became Company Chief Augmented Reality Research Engineer',
+            title:'Chief R&D Engineer - Augmented Reality',
             extended:'Lead various projects to evaluate Augmented Reality hardware and software for application for commercial customers in the Agriculture, Construction, and Oil & Gas Industry. Built various prototypes and demonstrated to commercial partner leadership.',
             labels:['Current','AR/VR','Risk Mitigation','Language:C#','Technology:Unity3d','Rapid Prototyping']}),
         BuildEntry({
             start:'Late 2017',
             stop: 'Early 2018',
-            title:'Principle Investigator for Adaptive Augmented Reality Displays SBIR',
+            title:'Principle Investigator - Adaptive Augmented Reality Displays SBIR',
             text:['Discovered, proposed, won, lead, and delivered on Small Business Innovation Research Grant'],
             extended:['Originated, Chief Technical Writer, Principal Investigator, and Project lead for Phase I SBIR to build an Adaptive Augmented Reality Display. Adapted the modalities utilized to communicate with the user as they performed procedural tasks. Took in various inputs such as simulated stress levels, procedure state, and expertise of the user.',
             '• Lead team of 3 engineers',
@@ -371,7 +371,7 @@ function ResumeModel(){
         BuildEntry({
             start:'Early 2017',
             stop:'Present',
-            title:'Became REALM Chief Database Architect (RFID Enabled Autonomous Logistics Management)',
+            title:'Chief Database Architect - RFID Logistics',
             extended:'Led schema development, database administration, and development of loading/management scripts. Database would grow to nearly 4 TB by 2021.Implemented various partitioning, meta status/summary tables, and loader optimizations to keep up with the growth of data, and maintain query performance at acceptable levels. ',
             labels:['Current','Technology:PostgreSQL','Infrastructure','Technology:Machine Learning']}),
         BuildEntry({
@@ -398,7 +398,7 @@ function ResumeModel(){
             start:'Late 2016',
             title:'Restful simulation interfaces SBIR',
             text:['Small Business Innovation Research Grant',
-                  '• Integrate restful web services into RS422/MIL-STD-1553 bus'],
+                  '• Primary technical contributor, integrating restful web services into RS422/MIL-STD-1553 bus'],
             extended:'Developed a restful interface to streaming RS422 an MIL-STD-1553 data. Cross compiled existing framework to run on a rad hardened PowerPC platform.',
             labels:['Language:Javascript','Language:C++','Language:Php','Hardware/Software Integration','Proposals']}),
         BuildEntry({
@@ -421,7 +421,7 @@ function ResumeModel(){
             labels:['Leadership','Process Improvement','Proposals','Conflict Resolution']}),
         BuildEntry({
             start:'Early 2016',
-            title:'Became Team’s Process Lead',
+            title:'Software Process Lead',
             extended:'Led Software process activities for a 25 person software engineering team. Supported CMMI 3 appraisal effort. Integrated documentation automation into team process.',
             labels:['Leadership','Process Improvement']}),
         BuildEntry({
