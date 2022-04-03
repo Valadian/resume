@@ -70,6 +70,14 @@
     color:#e9ecef;
 
 }
+.image-container {
+  width:  120px; 
+  height: 80px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: 0 0 120px;
+}
 @media (max-width: 575px) { /*Small Screen*/
     .card-body{
         margin-left:15px;
@@ -121,6 +129,15 @@
         /* font-weight: normal !important; */
         white-space: inherit  !important;
     }
+    
+    .image-container {
+        width:  60px; 
+        height: 80px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex: 0 0 60px;
+    }
 }
 @media (min-width: 1570px){
     #statistics-card-body{
@@ -146,20 +163,13 @@
     content: "";
     clear: both;
 }
-.image-container {
-  width:  120px; 
-  height: 80px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 .entry{
     border-bottom: 1px solid grey ;
 }
 .entry-company{
     background-color: black;
-    margin: -20px;
-    padding: 20px;
+    margin: -1rem -20px 1rem -20px;
+    padding: 1rem 20px 0px 20px;
     border-bottom: 0px solid black;
 }
 .btn.btn-filter-inactive{
@@ -184,4 +194,28 @@
 }
 b {
     color: #88AADD;
+}
+.btn-detail{
+    margin-top: -17px;
+    margin-bottom: -1px;
+    opacity: 1;
+    transition: all 500ms;
+}
+
+@media (min-width: 576px) {
+ .btn-detail {
+     margin-right: -20px
+ }   
+}
+@media (hover: hover) {
+    .entry:not(:hover) .btn-detail{
+        opacity: 0;
+    }
+}
+.card-body{
+    padding-top: 1rem !important;
+}
+.g-1-1{
+    grid-column: 1;
+    grid-row: 1;
 }

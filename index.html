@@ -73,7 +73,7 @@
                             <div class="card mt-3">
                                 <div class="card-header d-flex justify-content-between">
                                     <span><i class="bi bi-person"></i> Introduction</span>
-                                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#intro-card-body" aria-expanded="false" aria-controls="collapseExample">
+                                    <button class="btn btn-sm btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#intro-card-body" aria-expanded="false" aria-controls="collapseExample">
                                         Toggle
                                       </button>
                                 </div>
@@ -96,7 +96,7 @@
                             <div class="card mt-3">
                                 <div class="card-header d-flex justify-content-between">
                                     <span><i class="bi bi-mortarboard"></i> Education</span>
-                                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#education-card-body" aria-expanded="false" aria-controls="collapseExample">
+                                    <button class="btn btn-sm btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#education-card-body" aria-expanded="false" aria-controls="collapseExample">
                                         Toggle
                                       </button>
                                 </div>
@@ -107,7 +107,7 @@
                             <div class="card mt-3">
                                 <div class="card-header d-flex justify-content-between">
                                     <span><i class="bi bi-building"></i> Employment</span>
-                                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#employment-card-body" aria-expanded="false" aria-controls="collapseExample">
+                                    <button class="btn btn-sm btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#employment-card-body" aria-expanded="false" aria-controls="collapseExample">
                                         Toggle
                                       </button>
                                 </div>
@@ -120,6 +120,7 @@
                                     <i class="bi bi-list-columns-reverse"></i> Experience
                                     
                                     <span data-bind="template: {name: 'label-btn-template', foreach: topButtons}"></span>
+                                    <span data-bind="template: {name: 'label-btn-template', data: currentBtn}"></span>
                                     <!-- <button type="button" class="btn btn-danger" >
                                         <span>Technologies</span>
                                         <span data-bind="text: numTechnologies" class="badge bg-dark"></span>
@@ -128,12 +129,13 @@
                                         <span>Languages</span>
                                         <span data-bind="text: numLanguages" class="badge bg-dark"></span>
                                     </button> -->
-                                    <div data-bind="visible: leadershipBtn.active, template: {name: 'label-btn-template', foreach: leadership}"></div>
-                                    <div data-bind="visible: designBtn.active, template: {name: 'label-btn-template', foreach: design}"></div>
-                                    <div data-bind="visible: technologyBtn.active, template: {name: 'label-btn-template', foreach: technologies}"></div>
-                                    <div data-bind="visible: technologyBtn.active, template: {name: 'label-btn-template', foreach: languages}"></div>
-                                    <div data-bind="visible: domainBtn.active, template: {name: 'label-btn-template', foreach: domains}"></div>
-                                    <div data-bind="visible: accomplishmentBtn.active, template: {name: 'label-btn-template', foreach: accomplishments}"></div>
+                                    <div data-bind="fadeVisible: leadershipBtn.active, template: {name: 'label-btn-template', foreach: leadership}"></div>
+                                    <div data-bind="fadeVisible: designBtn.active, template: {name: 'label-btn-template', foreach: design}"></div>
+                                    <div data-bind="fadeVisible: domainBtn.active, template: {name: 'label-btn-template', foreach: domains}"></div>
+                                    <div data-bind="fadeVisible: technologyBtn.active, template: {name: 'label-btn-template', foreach: technologies}"></div>
+                                    <div data-bind="fadeVisible: technologyBtn.active, template: {name: 'label-btn-template', foreach: languages}"></div>
+                                    <div data-bind="fadeVisible: accomplishmentBtn.active, template: {name: 'label-btn-template', foreach: accomplishments}"></div>
+                                    
                                 </div>
                                 <div class="card-body collapse show" id="experience-card-body">
                                     <div data-bind="template: {name: 'entry-template', foreach: experience_filtered}"></div>
@@ -153,39 +155,49 @@
         </button>
     </script>
     <script type="text/html" id="entry-template">
-        <div class="clearfix mb-3 entry" data-bind="class: classes">
-            <span>
-                <p class="text-muted" >
-                    <span data-bind="visible: stop!=null, text: start+' → '+stop"></span>
-                    <span data-bind="visible: stop==null, text: start"></span>
-                    <span data-bind="visible: timespan, text: '('+timespan+')'"></span>
-                </p>
-            </span>
-            <div class="d-flex justify-content-between">
-                <!-- ko if: image-->
-                <div class="mr-3 image-container" data-bind="style: {'background-image':'url('+image+')'}">
-                </div>
-                <!-- /ko-->
-                <div class="flex-grow-1">
-                    <div>
-                        <!-- ko foreach: $root.sort_labels(labels)-->
-                            <span class="badge" data-bind="text:$data, class:$root.labelToBg($data)"></span>
-                        <!-- /ko -->
+        <div class="clearfix mb-3 entry d-flex" data-bind="class: classes">
+            <div class="flex-fill">
+                <span class="text-muted" >
+                    <nobr><span data-bind="visible: stop!=null, text: start+' → '+stop"></span>
+                    <span data-bind="visible: stop==null, text: start"></span></nobr>
+                    <nobr><span data-bind="visible: timespan, text: '('+timespan+')'"></span></nobr>
+                </span>
+                <div class="d-flex justify-content-between">
+                    <!-- ko if: image-->
+                    <div class="mr-3 image-container" data-bind="style: {'background-image':'url('+image+')'}">
                     </div>
-                    <div class="d-flex justify-content-between">
+                    <!-- /ko-->
+                    <div class="flex-grow-1">
+                        <div>
+                            <!-- ko foreach: $root.sort_labels(labels)-->
+                                <span class="badge" data-bind="text:$data, class:$root.labelToBg($data)"></span>
+                            <!-- /ko -->
+                        </div>
                         <h4 data-bind="html: title"></h4>
                         <!-- ko if: location-->
-                        <p class="d-none d-md-block" data-bind="text: location"></p>
+                        <p class="d-none d-md-block"><b data-bind="text: location"></b></p>
                         <!-- /ko-->
+                        <span class="d-grid">
+                            <p class="g-1-1" data-bind="fadeVisible: !verbose()">
+                                <!-- ko foreach: text-->
+                                <span data-bind="html: $data"></span>
+                                <br>
+                                <!-- /ko-->
+                            </p>
+                            
+                            <p class="g-1-1" data-bind="fadeVisible: verbose()">
+                                <!-- ko foreach: extended-->
+                                <span data-bind="html: $data"></span>
+                                <br>
+                                <!-- /ko-->
+                            </p>
+                        </span>
                     </div>
-                    <p>
-                        <!-- ko foreach: text-->
-                        <span data-bind="html: $data"></span>
-                        <br>
-                        <!-- /ko-->
-                    </p>
                 </div>
             </div>
+            <button class="btn btn-sm btn-secondary btn-detail d-shrink-1" data-bind="visible: extended.length>0, click: () => verbose(!verbose())">
+                <i class="bi bi-search"></i>
+            </button>
         </div>
     </script>
 </html> 
