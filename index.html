@@ -160,27 +160,32 @@
                     <span data-bind="visible: stop==null, text: start"></span>
                     <span data-bind="visible: timespan, text: '('+timespan+')'"></span>
                 </p>
-                <!-- ko foreach: $root.sort_labels(labels)-->
-                    <span class="badge" data-bind="text:$data, class:$root.labelToBg($data)"></span>
-                <!-- /ko -->
             </span>
-            <!-- ko if: image-->
-            <div class="float-start mr-3 image-container" data-bind="style: {'background-image':'url('+image+')'}">
-            </div>
-            
-            <!-- /ko-->
             <div class="d-flex justify-content-between">
-                <h4 data-bind="html: title"></h4>
-                <!-- ko if: location-->
-                <p class="d-none d-md-block" data-bind="text: location"></p>
+                <!-- ko if: image-->
+                <div class="mr-3 image-container" data-bind="style: {'background-image':'url('+image+')'}">
+                </div>
                 <!-- /ko-->
+                <div class="flex-grow-1">
+                    <div>
+                        <!-- ko foreach: $root.sort_labels(labels)-->
+                            <span class="badge" data-bind="text:$data, class:$root.labelToBg($data)"></span>
+                        <!-- /ko -->
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h4 data-bind="html: title"></h4>
+                        <!-- ko if: location-->
+                        <p class="d-none d-md-block" data-bind="text: location"></p>
+                        <!-- /ko-->
+                    </div>
+                    <p>
+                        <!-- ko foreach: text-->
+                        <span data-bind="html: $data"></span>
+                        <br>
+                        <!-- /ko-->
+                    </p>
+                </div>
             </div>
-            <p>
-                <!-- ko foreach: text-->
-                <span data-bind="html: $data"></span>
-                <br>
-                <!-- /ko-->
-            </p>
         </div>
     </script>
 </html> 
