@@ -187,7 +187,8 @@ function ResumeModel(){
             extended:['J. Simonoff, J. Berger, A. Abdullali, O. Lerner, L. Rodriguez, P. Fink Ph.D',
                   '“Intra-Spacecraft RFID Localization”',
                   'Presented to IEEE International Conference on RFID, 2021<br>',
-                  'Supporting Technical writer, and chief researcher of Machine Learning algorithms applied to RFID localization in highly complex and reflective multipath environments. This paper is the basis of the localization capabilities utilized for finding missing items on the International Space Station, and confirming manifest loading before visiting vehicles depart.'],
+                  'Supporting Technical writer, and chief researcher of Machine Learning algorithms applied to RFID localization in highly complex and reflective multipath environments. This paper is the basis of the localization capabilities utilized for finding missing items on the International Space Station, and confirming manifest loading before visiting vehicles depart.<br>',
+                  'Abstract: In this paper we explore two machine learning approaches to improve RFID tag localization in the highly reflective environment imposed by the International Space Station. We propose P-RFIDNet (Passive RFID Net), a neural network with a ResNet50 (He, et al., 2015) [1] backbone for localizing passive RFID tags in high multipath environments with fixed antennas. Furthermore, we show how transfer learning can be used to generalize P-RFIDNet to new RFID environments with limited training data. In addition to P-RFIDNet, we present REALMRFC, a random forest (Breiman, 2001) [2] model with feature engineering performed by an RFID localization expert. We benchmark P-RFIDNet and REALMRFC using data from the RFID Enabled Autonomous Logistics Management (REALM) RFID system on International Space Station (ISS).'],
             labels: ['Publication','Technology:Machine Learning']}),
         BuildEntry({
             start:'Spring 2021',
@@ -238,7 +239,7 @@ function ResumeModel(){
             text:'Random Forest, XGBoost, Feature decomposition, pipeline generation for RFID localization',
             extended:['Led RFID Enabled Autonomous Logistics Management (REALM) Algorithm development as part of our Complex Event Processor (CEP) Toolchain. Was first to utilize machine learning algorithms to solve signal strength to Rack Location classification, leveraged that into a reusable Machine Learning toolchain for our RFID readings database, and brought other developers up to speed to be able to continue and expand the ground work I created. This work is one of <b>the only operational uses of Machine Learning on a daily basis in Mission Control</b> in the direction  of astronaut activities.',
                      'Initial work consisted of using >30 billion RFID reads, integrating with manually entered Inventory Management System (IMS) data, and training a Random Forest to classify Rack (42”x84”) locations. Supported development of continued work building a Image Recognition/CNN Deep Learning engine (extending ResNet50). Develop methods to ensemble the results and present them through a web interface for consumption by Mission Control Center (MCC) Inventory Stowage Officers (ISOs).'],
-            labels:['Current','Technology:Machine Learning','Leadership','Language:Python','Technology:Machine Learning']}),
+            labels:['Current','Technology:Machine Learning','Leadership','Language:Python']}),
         BuildEntry({
             start:'Late 2019',
             title:'Recipient of Metecs’s “Empty Envelope” award',
@@ -325,7 +326,7 @@ function ResumeModel(){
             title:'Created and maintain first REALM RFID inferencing engine',
             text:'Built algorithmic localization solution to utilize RFID data from International Space Station leveraging Antenna Volumes and RSSI interpolation',
             extended:'Implemented the first REALM engine that consumed RFID signal strength data and converted it to XYZ locations inside of international space stations. Utilized antenna perspective regions/volumes and RSSI interpolation. Was absolutely critical in providing initial operational capability in leveraging the REALM science payload on Orbit into actionable information to be utilized for finding missing items on ISS.',
-            labels:['Current','Language:Python','Technology:PostgreSQL','Rapid Prototyping','Risk Mitigation','Technology:Machine Learning']}),
+            labels:['Current','Language:Python','Technology:PostgreSQL','Technology:SQL','Rapid Prototyping','Risk Mitigation','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2018',
             title:'Offline Speech to Text and Natural Language Processing (NLP) interfaces for RFID Logistics',
@@ -338,7 +339,8 @@ function ResumeModel(){
             extended:['Patrick W. Fink, Timothy F. Kennedy, Lazaro Rodriguez, James L. Broyan, Phong H. Ngo, Andrew Chu, Ami Yang, Donald M. Schmalholz, Robert W. Stonestreet, Robert C. Adams, Jesse Berger, Adam K. Merta, Frank J. Graffagnino, Prashant Shenoy, Emmanuel Cecchet and Jeremy Gummeson',
                   '“<a target="_blank" href="https://arc.aiaa.org/doi/abs/10.2514/6.2017-5256">Autonomous Logistics Management Systems for Exploration Missions</a>”',
                   '  Published to AIAA Space and Astronautics Forum and Exposition, 2017<br>',
-                  'Technical content author and supporting scientist'],
+                  'Technical content author and supporting scientist<br>',
+                  'Abstract: A set of autonomous logistics management (ALM) experiments based on radio frequency identification (RFID) is presented. The experiments are designed to utilized the International Space Station as a test bed for evaluation of key performance parameters and to learn which combination of RFID technologies are optimal for given missions. Experimental results, presented for the first phase of the experiments, indicate that RFID-based ALM is likely to be integrated in all future long duration human spaceflight missions. An overview and status of the second phase is presented. Strategies and options for the third phase are also discussed.'],
             labels:['Publication','Technology:Machine Learning']}),
         BuildEntry({
             start:'Late 2017',
@@ -373,14 +375,14 @@ function ResumeModel(){
             stop:'Present',
             title:'Chief Database Architect - RFID Logistics',
             extended:'Led schema development, database administration, and development of loading/management scripts. Database would grow to nearly 4 TB by 2021.Implemented various partitioning, meta status/summary tables, and loader optimizations to keep up with the growth of data, and maintain query performance at acceptable levels. ',
-            labels:['Current','Technology:PostgreSQL','Infrastructure','Technology:Machine Learning']}),
+            labels:['Current','Technology:PostgreSQL','Technology:SQL','Infrastructure','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2017',
             stop:'Present',
             title:'RFID automated database loading',
             text:'Built pipeline to automomously load ~20 million rows of data generated by International Space Station into PostgreSQL every day',
             extended:'Wrote loader scripts utilizing incron file event monitoring, python generators and batch inserts to load files as they are continuously downlinked to our ground software from International Space Station. On average this consists of 20 million reads a day. Over the years following, the loader scripts would be updated to handle the various anomalies in data, while ensuring changes don’t have unintended consequences on the production database.',
-            labels:['Current','Language:Python','Technology:PostgreSQL','Infrastructure','Technology:Machine Learning']}),
+            labels:['Current','Language:Python','Technology:PostgreSQL','Technology:SQL','Infrastructure','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2017',
             title:'Abstract state Localization Engine for RFID',
@@ -454,13 +456,13 @@ function ResumeModel(){
             stop:'Summer 2016',
             title:'Lead Sustaining engineer - RIM (Rig Operational Console)',
             extended:['Elevated to project leader due to retirement of current lead. Managed customer interaction, future release scoping, scheduling and project tracking, and project execution. Managed 1 or 2 developers/interns that worked on the project.'],
-            labels:['Language:Java','Language:Javascript','Technology:MySQL','Leadership','UI Design']}),
+            labels:['Language:Java','Language:Javascript','Technology:MySQL','Technology:SQL','Leadership','UI Design']}),
         BuildEntry({
             start:'Late 2012',
             title:'Database scripting API - Programatic Code/DLL Generation',
             text:['Repeatable and automated test scripting through C# or IronPython interfacing with MSSQL Database'],
             extended:'Customer needed a scripting interface into our test automation software. Utilized c# code generation to build a c# scripting API DLL from a large MSSQL database schema of ~60 tables. This gave the customer self-documenting intellisense auto-completion during scripting activities to greatly increase discoverability and reduce errors while developing new automation scripts. Was essential for ensuring repeatable and automated tests. Also enabled developer flexibility to utilize C# or IronPython. Replaced an out of date manual legacy solution with 100k LOC.',
-            labels:['Language:C#','Language:Python','Technology:MSSQL','Process Improvement']}),
+            labels:['Language:C#','Language:Python','Technology:MSSQL','Technology:SQL','Process Improvement']}),
         BuildEntry({
             start:'Early 2011',
             stop:'Summer 2016',
@@ -475,7 +477,7 @@ function ResumeModel(){
             text:['• International Space Station - Network Monitoring Software',
                   '• Used Icinga with a Postgresql database to collect and display real time network data such as clients, services, bandwidth, and ping performance over time.'],
             extended:'Configured, Deployed, and Implemented monitoring scripts to leverage Icinga and DDS to monitor crew laptops and routers on the International Space Station Crew network. Continuously collected information on clients, services, bandwidth and network performance to enable preventative maintenance on vehicle systems. This was essential due to the potentially long delay between parts replacement and resupply',
-            labels:['Technology:PostgreSQL','Infrastructure']}),
+            labels:['Technology:PostgreSQL','Technology:SQL','Infrastructure']}),
         BuildEntry({
             start:'Early 2010',
             title:'Configuration management Lead - StarTeam to Subversion Migration',
@@ -524,7 +526,7 @@ function ResumeModel(){
             title:'RIM (Rig Information Management) developer',
             text:['Rapidly came up to speed mid development for web-based integration management system. Joined team of 2 senior engineers. During internship, contributed 25% of features for that first release'],
             extended:'Started working on the Rig Information management (RIM) process automation tool used in International Space Station software test and verification. RIM replaced 2 dozen manual paper/office tool processes with a single database centric integrated web solution. The tool was architected on multiple open-source tools and frameworks. Enterprise full stack Java development, interchangeable Oracle/MySQL database, Hibernate Object Relational Mapping (ORM), original Tapestry Java web framework, migrated to Wicket. Developed on Windows, deployed on Linux. In 2013 became lead sustaining engineer.',
-            labels:['Language:Java','Language:Javascript','Technology:Oracle','Technology:MySQL','UI Design']}),
+            labels:['Language:Java','Language:Javascript','Technology:Oracle','Technology:MySQL','Technology:SQL','UI Design']}),
         BuildEntry({
             image:'https://www.boeing.com/assets/images/logo.png',
             start:'May 2008',
@@ -664,7 +666,7 @@ function ResumeModel(){
         return this.accomplishments().reduce((num,label) => num+label.count(),0);
     },this)
     this.accomplishmentBtn = new function(){
-        this.name= ko.observable("Accomplishments")
+        this.name= ko.observable("Accomplishments/Publications")
         this.count = koModel.numAccomplishment
         this.active = ko.observable(false)
         this.bgStyle = ko.pureComputed(() => "bg-warning text-dark" + (this.active()?" btn-toplevel-active":""))
@@ -784,7 +786,7 @@ function ResumeModel(){
         }
         return groups_prios
     },this)
-    
+
     this.currentBtn = ko.pureComputed(function(){
         return koModel.alllabels().filter(l => l.name()=="Current")[0]
     },this)

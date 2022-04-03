@@ -143,7 +143,14 @@
                                     <div data-bind="fadeVisible: technologyBtn.active, template: {name: 'label-btn-template', foreach: technologies}"></div>
                                     <div data-bind="fadeVisible: technologyBtn.active, template: {name: 'label-btn-template', foreach: languages}"></div>
                                     <div data-bind="fadeVisible: accomplishmentBtn.active, template: {name: 'label-btn-template', foreach: accomplishments}"></div>
-                                    
+                                    <div>
+                                        <!-- ko if: experience().length == experience_filtered().length-->
+                                        <span class="text-muted">Showing all entries:</span>
+                                        <!-- /ko-->
+                                        <!-- ko ifnot: experience().length == experience_filtered().length-->
+                                        <span class="text-muted">Showing <span data-bind="text:experience_filtered().length"></span> of <span data-bind="text:experience().length"></span> entry(s):</span>
+                                        <!-- /ko-->
+                                    </div>
                                 </div>
                                 <div class="card-body collapse show" id="experience-card-body">
                                     <div data-bind="template: {name: 'entry-template', foreach: experience_filtered}"></div>
