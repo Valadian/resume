@@ -510,7 +510,7 @@ function ResumeModel(){
             extended:['Berger, Jesse & Carson, Cory & Towhidnejad, Massood & Stansbury, Richard. (2009).',
                     '“Autonomous Navigation and Obstacle Avoidance”',
                     '  Published to AIAA Infotech@Aerospace Conference 2009'],
-            labels:['Publication','Academic']}),
+            labels:['Technology:Machine Learning','Publication','Academic']}),
         BuildEntry({
             start:'Fall 2008',
             stop: 'Spring 2009',
