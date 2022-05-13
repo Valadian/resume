@@ -104,9 +104,17 @@ function ResumeModel(){
     ])
     this.employment = ko.observableArray([
         BuildEntry({
+            image:'content/meta.png',
+            start:'May 2022',
+            stop:'Present',
+            title:'Meta',
+            location:'Remote',
+            text:'Staff Software Engineer',
+            classes:'entry-company'}),
+        BuildEntry({
             image:'https://metecs.com/wp-content/uploads/2019/03/METECS_Logo-web-mobile-small01.png',
             start:'Summer 2016',
-            stop:'Present',
+            stop:'May 2022',
             title:'Metecs',
             location:'Houston, TX',
             text:'Senior Software & Simulation Engineer',
@@ -157,6 +165,18 @@ function ResumeModel(){
     this.experience = ko.observableArray([
         BuildEntry({
             start:'March 2022',
+            title:'Meta Bootcamp',
+            text:'Looking for team match in Augmented Reality, Virtual Reality, or Machine Learning',
+            }),
+        BuildEntry({
+            image:'content/meta.png',
+            start:'May 2022',
+            stop:'Present',
+            title:'Started at Meta',
+            labels:['Employer'],
+            classes:'entry-company'}),
+        BuildEntry({
+            start:'March 2022',
             title:'Johnson Space Center Individual Innovation Award',
             text:'For Machine Learning Contributions to ISS Logistics Program',
             extended:'Recognized for my Individual contributions as the chief Machine Learning architect for the RFID Logistics program on the International Space Station. Models are leveraged in real-time operations with Astronauts while performing cargo related duties to locate unexpected missing items required for cargo manifest and scientific experiments.',
@@ -174,7 +194,7 @@ function ResumeModel(){
         //     labels: ['Language:Python','Language:Go','Simulation']}),
         BuildEntry({
             start:'Early 2021',
-            stop:'Present',
+            stop:'May 2022',
             title:'Successful Homing test of Autonomous Astrobee robot on ISS',
             text:'Autonomous Algorithm controlling Astrobee Robot onboard International Space Station tracked RFID tag',
             extended:['Algorithm and autonomous control code that I had written in 2019 had its maiden flight on the International Space Station. Experiment was set up by Astronaut Shannon Walker, and successfully met all test objectives. Results of that test was utilized to improve algorithm leading to a highly successful test in early 2022 culminating to robot navigating and touching target across a module. More details below. ',
@@ -206,7 +226,7 @@ function ResumeModel(){
             labels:['Language:Python','Process Improvement','Leadership','UI Design','Proposals']}),
         BuildEntry({
             start:'Late 2020',
-            stop:'Present',
+            stop:'May 2022',
             title:'Contract Task Lead - NASA Lunar Gateway ',
             text:'Managing 5 Senior, and 3-4 mid career engineers supporting Lunar Gateway Integration Tasks',
             extended:['Contract Task Order lead and manager of $1-5 million/yr Task Order. Ensured team largely consisting of Sr. Engineers were meeting Contractual Obligations defined in Task Order, led daily tagups, managed schedules, task prioritization, and ensured technical risks were identified and mitigated early. Outside of my technical role, I continued being primary User Interface Developer for the Integrated Lunar Gateway Engineering Simulation platform. This task consisted of significant exposure and integration with commercial and international partners from Maxar, Northrop, JAXA, ESA, CSA. Task grew substantially under my leadership, leading it to be separated from the below mentioned Exploration Systems Simulation Task Order.<br>',
@@ -220,7 +240,7 @@ function ResumeModel(){
             labels:['Current','Leadership','Proposals','Team Building','Simulation','UI Design','Conflict Resolution']}),
         BuildEntry({
             start:'Early 2020',
-            stop:'Present',
+            stop:'May 2022',
             title:'User Interface and Integration Lead - Lunar Gateway',
             text:'Lead Integrator and User Interface Designer for the Lunar Gateway integrated simulation platform',
             extended:'Working with NASA Lab Managers, Commercial Partners (Maxar, Northrop Grumman), and international partners (JAXA, ESA, CSA) to instrument simulations for use in a common orchestrated lab environment',
@@ -234,7 +254,7 @@ function ResumeModel(){
             labels:['Leadership','Simulation']}),
         BuildEntry({
             start:'Early 2020',
-            stop:'Present',
+            stop:'May 2022',
             title:'Chief Architect - REALM Machine Learning and Algorithm Development',
             text:'Random Forest, XGBoost, Feature decomposition, pipeline generation for RFID localization',
             extended:['Led RFID Enabled Autonomous Logistics Management (REALM) Algorithm development as part of our Complex Event Processor (CEP) Toolchain. Was first to utilize machine learning algorithms to solve signal strength to Rack Location classification, leveraged that into a reusable Machine Learning toolchain for our RFID readings database, and brought other developers up to speed to be able to continue and expand the ground work I created. This work is one of <b>the only operational uses of Machine Learning on a daily basis in Mission Control</b> in the direction  of astronaut activities.',
@@ -247,7 +267,7 @@ function ResumeModel(){
             labels:['Accomplishments']}),
         BuildEntry({
             start:'Late 2019',
-            stop:'Present',
+            stop:'May 2022',
             title:'Lead Monthly Metecs Board Game Nights',
             text:'Make new employees feel more welcome',
             extended:['Modern Board games are a personal hobby of mine. Led effort to have recurring Board Games nights to make new employees feel more welcome, and help existing employees to become more comfortable and effective at a team.',
@@ -261,7 +281,7 @@ function ResumeModel(){
         }),
         BuildEntry({
             start:'Late 2019',
-            stop:'Present',
+            stop:'May 2022',
             title:'Contract Task Co-Lead - REALM Ground Sofware',
             text:['Managing 12 developers',
                   '• Interfacing with International Space Station (ISS) Inventory Stowage Officers (ISOs)',
@@ -306,7 +326,7 @@ function ResumeModel(){
             labels:['Language:C#','Technology:Unity3d','AR/VR','Risk Mitigation','UI Design','Proposals']}),
         BuildEntry({
             start:'Early 2018',
-            stop:'Present',
+            stop:'May 2022',
             title:'Chief Architect - REALM Autonomous Robotics',
             text:['cross compilation build process for class 1E flight software'],
             extended:['Led technical efforts involving cross compilation to arm hardware under class 1E flight software requirements. Led development effort for Android based Astrobee Free Flying robot software utilizing CrystaX Native Development Kit (NDK)<br>',
@@ -314,7 +334,7 @@ function ResumeModel(){
             labels:['Current','Language:C++','Language:Java','Technology:Android','Technology:Robotic Operating System','Technology:Machine Learning','Risk Mitigation','Conflict Resolution']}),
         BuildEntry({
             start:'Early 2018',
-            stop:'Present',
+            stop:'May 2022',
             title:'Metecs Recruiter and Primary Candidate Interviewer',
             text:['• Technical Interview of Candidates',
                   '• Lead Career Fair Booth, resume filtering, and follow up interviews'],
@@ -322,7 +342,7 @@ function ResumeModel(){
             labels:['Current','Team Building']}),
         BuildEntry({
             start:'Early 2018',
-            stop: 'Present',
+            stop: 'May 2022',
             title:'Created and maintain first REALM RFID inferencing engine',
             text:'Built algorithmic localization solution to utilize RFID data from International Space Station leveraging Antenna Volumes and RSSI interpolation',
             extended:'Implemented the first REALM engine that consumed RFID signal strength data and converted it to XYZ locations inside of international space stations. Utilized antenna perspective regions/volumes and RSSI interpolation. Was absolutely critical in providing initial operational capability in leveraging the REALM science payload on Orbit into actionable information to be utilized for finding missing items on ISS.',
@@ -350,7 +370,7 @@ function ResumeModel(){
             labels:['Language:Python','Language:C#','Technology:Unity3d','Rapid Prototyping','Technology:Machine Learning']}),
         BuildEntry({
             start:'Late 2017',
-            stop: 'Present',
+            stop: 'May 2022',
             title:'Chief R&D Engineer - Augmented Reality',
             extended:'Lead various projects to evaluate Augmented Reality hardware and software for application for commercial customers in the Agriculture, Construction, and Oil & Gas Industry. Built various prototypes and demonstrated to commercial partner leadership.',
             labels:['Current','AR/VR','Risk Mitigation','Language:C#','Technology:Unity3d','Rapid Prototyping']}),
@@ -372,13 +392,13 @@ function ResumeModel(){
             labels:['Current','Language:C#','Technology:Unity3d','Technology:rest','UI Design','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2017',
-            stop:'Present',
+            stop:'May 2022',
             title:'Chief Database Architect - RFID Logistics',
             extended:'Led schema development, database administration, and development of loading/management scripts. Database would grow to nearly 4 TB by 2021.Implemented various partitioning, meta status/summary tables, and loader optimizations to keep up with the growth of data, and maintain query performance at acceptable levels. ',
             labels:['Current','Technology:PostgreSQL','Technology:SQL','Infrastructure','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2017',
-            stop:'Present',
+            stop:'May 2022',
             title:'RFID automated database loading',
             text:'Built pipeline to automomously load ~20 million rows of data generated by International Space Station into PostgreSQL every day',
             extended:'Wrote loader scripts utilizing incron file event monitoring, python generators and batch inserts to load files as they are continuously downlinked to our ground software from International Space Station. On average this consists of 20 million reads a day. Over the years following, the loader scripts would be updated to handle the various anomalies in data, while ensuring changes don’t have unintended consequences on the production database.',
@@ -406,7 +426,7 @@ function ResumeModel(){
         BuildEntry({
             image:'https://metecs.com/wp-content/uploads/2019/03/METECS_Logo-web-mobile-small01.png',
             start:'Summer 2016',
-            stop: 'Present',
+            stop: 'May 2022',
             title:'Started at MacLean Engineering and Applied Technology (METECS)',
             labels:['Employer'],
             classes:'entry-company'}),
