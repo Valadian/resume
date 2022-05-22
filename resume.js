@@ -167,6 +167,7 @@ function ResumeModel(){
             start:'March 2022',
             title:'Meta Bootcamp',
             text:'Looking for team match in Augmented Reality, Virtual Reality, or Machine Learning',
+            labels: ['Current']
             }),
         BuildEntry({
             image:'content/meta.png',
@@ -199,7 +200,7 @@ function ResumeModel(){
             text:'Autonomous Algorithm controlling Astrobee Robot onboard International Space Station tracked RFID tag',
             extended:['Algorithm and autonomous control code that I had written in 2019 had its maiden flight on the International Space Station. Experiment was set up by Astronaut Shannon Walker, and successfully met all test objectives. Results of that test was utilized to improve algorithm leading to a highly successful test in early 2022 culminating to robot navigating and touching target across a module. More details below. ',
                       '<br><a target="_blank" href="https://metecs.com/astrobee-flights/">More Info here</a>'],
-            labels: ['Current','Accomplishments','Technology:Robotic Operating System','Language:C++','Language:Java']}),
+            labels: ['Accomplishments','Technology:Robotic Operating System','Language:C++','Language:Java']}),
         BuildEntry({
             start:'Early 2021',
             title:'<a target="_blank" href="https://ieeexplore.ieee.org/document/9444373">Intra-Spacecraft RFID Localization</a>',
@@ -237,14 +238,14 @@ function ResumeModel(){
                 '• Commercial Partner Oversight',
                 '• NASA Demonstration support',
                 '• Due to large number of interfaces with external teams, requires persistant resolution of technical and interorganizational conflict'],
-            labels:['Current','Leadership','Proposals','Team Building','Simulation','UI Design','Conflict Resolution']}),
+            labels:['Leadership','Proposals','Team Building','Simulation','UI Design','Conflict Resolution']}),
         BuildEntry({
             start:'Early 2020',
             stop:'May 2022',
             title:'User Interface and Integration Lead - Lunar Gateway',
             text:'Lead Integrator and User Interface Designer for the Lunar Gateway integrated simulation platform',
             extended:'Working with NASA Lab Managers, Commercial Partners (Maxar, Northrop Grumman), and international partners (JAXA, ESA, CSA) to instrument simulations for use in a common orchestrated lab environment',
-            labels:['Language:Javascript','Language:Php','Language:C++','Language:Go','Current','Leadership','Hardware/Software Integration','Simulation','Infrastructure','UI Design']}),
+            labels:['Language:Javascript','Language:Php','Language:C++','Language:Go','Leadership','Hardware/Software Integration','Simulation','Infrastructure','UI Design']}),
         BuildEntry({
             start:'Early 2020',
             stop:'Late 2020',
@@ -259,7 +260,7 @@ function ResumeModel(){
             text:'Random Forest, XGBoost, Feature decomposition, pipeline generation for RFID localization',
             extended:['Led RFID Enabled Autonomous Logistics Management (REALM) Algorithm development as part of our Complex Event Processor (CEP) Toolchain. Was first to utilize machine learning algorithms to solve signal strength to Rack Location classification, leveraged that into a reusable Machine Learning toolchain for our RFID readings database, and brought other developers up to speed to be able to continue and expand the ground work I created. This work is one of <b>the only operational uses of Machine Learning on a daily basis in Mission Control</b> in the direction  of astronaut activities.',
                      'Initial work consisted of using >30 billion RFID reads, integrating with manually entered Inventory Management System (IMS) data, and training a Random Forest to classify Rack (42”x84”) locations. Supported development of continued work building a Image Recognition/CNN Deep Learning engine (extending ResNet50). Develop methods to ensemble the results and present them through a web interface for consumption by Mission Control Center (MCC) Inventory Stowage Officers (ISOs).'],
-            labels:['Current','Technology:Machine Learning','Leadership','Language:Python']}),
+            labels:['Technology:Machine Learning','Leadership','Language:Python']}),
         BuildEntry({
             start:'Late 2019',
             title:'Recipient of Metecs’s “Empty Envelope” award',
@@ -272,7 +273,7 @@ function ResumeModel(){
             text:'Make new employees feel more welcome',
             extended:['Modern Board games are a personal hobby of mine. Led effort to have recurring Board Games nights to make new employees feel more welcome, and help existing employees to become more comfortable and effective at a team.',
             'Going into 2020, this became much more challenging, and was converted to a remote game night consisting of Tabletop Simulator, or other team/cooperative based gaming.'],
-            labels:['Current','Team Building']}),
+            labels:['Team Building']}),
         BuildEntry({
             start:'Late 2019',
             title:'Facilitated Performance Improvement Plan (PIP) for direct report',
@@ -288,7 +289,7 @@ function ResumeModel(){
                   '• REALM-1 transition from a science payload to an ISS operational system.'],
             extended:['REALM = Radio Frequency Identification (RFID) Embedded Automated Logistics Management<br>',
                     'One of 3 co-managers of the task comprising 3 primary principal subtasks and between 12-19 developers. My subtask was the ground based data analysis toolset comprising a 3TB database of 30 Billion RFID reads that had been downlinked from our instrumentation operating on the International Space Station (ISS) since 2017. Led the task throughout the transition of REALM from a science payload to an operational system. My contributions were essential to the continuing operation and funding of REALM by the ISS program.'],
-            labels:['Current','Leadership','UI Design','Technology:Machine Learning']}),
+            labels:['Leadership','UI Design','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2019',
             title:'International Space Station - Unity Visualizer',
@@ -331,7 +332,7 @@ function ResumeModel(){
             text:['cross compilation build process for class 1E flight software'],
             extended:['Led technical efforts involving cross compilation to arm hardware under class 1E flight software requirements. Led development effort for Android based Astrobee Free Flying robot software utilizing CrystaX Native Development Kit (NDK)<br>',
                     'Technical leadership of project started with a Tiger team of Sr. Metecs`s Developers saving the project from the previous contractor.'],
-            labels:['Current','Language:C++','Language:Java','Technology:Android','Technology:Robotic Operating System','Technology:Machine Learning','Risk Mitigation','Conflict Resolution']}),
+            labels:['Language:C++','Language:Java','Technology:Android','Technology:Robotic Operating System','Technology:Machine Learning','Risk Mitigation','Conflict Resolution']}),
         BuildEntry({
             start:'Early 2018',
             stop:'May 2022',
@@ -339,14 +340,14 @@ function ResumeModel(){
             text:['• Technical Interview of Candidates',
                   '• Lead Career Fair Booth, resume filtering, and follow up interviews'],
             extended:'Reviewed hundreds of resumes, led dozens on dozens of technical interviews to identify qualified software engineering candidates. Worked with other recruiters to establish a consistent process and method to normalize scoring methods.',
-            labels:['Current','Team Building']}),
+            labels:['Team Building']}),
         BuildEntry({
             start:'Early 2018',
             stop: 'May 2022',
             title:'Created and maintain first REALM RFID inferencing engine',
             text:'Built algorithmic localization solution to utilize RFID data from International Space Station leveraging Antenna Volumes and RSSI interpolation',
             extended:'Implemented the first REALM engine that consumed RFID signal strength data and converted it to XYZ locations inside of international space stations. Utilized antenna perspective regions/volumes and RSSI interpolation. Was absolutely critical in providing initial operational capability in leveraging the REALM science payload on Orbit into actionable information to be utilized for finding missing items on ISS.',
-            labels:['Current','Language:Python','Technology:PostgreSQL','Technology:SQL','Rapid Prototyping','Risk Mitigation','Technology:Machine Learning']}),
+            labels:['Language:Python','Technology:PostgreSQL','Technology:SQL','Rapid Prototyping','Risk Mitigation','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2018',
             title:'Offline Speech to Text and Natural Language Processing (NLP) interfaces for RFID Logistics',
@@ -373,7 +374,7 @@ function ResumeModel(){
             stop: 'May 2022',
             title:'Chief R&D Engineer - Augmented Reality',
             extended:'Lead various projects to evaluate Augmented Reality hardware and software for application for commercial customers in the Agriculture, Construction, and Oil & Gas Industry. Built various prototypes and demonstrated to commercial partner leadership.',
-            labels:['Current','AR/VR','Risk Mitigation','Language:C#','Technology:Unity3d','Rapid Prototyping']}),
+            labels:['AR/VR','Risk Mitigation','Language:C#','Technology:Unity3d','Rapid Prototyping']}),
         BuildEntry({
             start:'Late 2017',
             stop: 'Early 2018',
@@ -389,20 +390,20 @@ function ResumeModel(){
             start:'Early 2017',
             title:'International Space Station Unity3d Visualizer for RFID Localization',
             extended:'Conceived and Built 3d visualization of the International Space Station for use in Science Analysis. Over the years has proven essential to support discussions of on-orbit hardware and inferencing algorithm effectiveness. Regularly used to discuss anomalies of hardware reconfiguration.',
-            labels:['Current','Language:C#','Technology:Unity3d','Technology:rest','UI Design','Technology:Machine Learning']}),
+            labels:['Language:C#','Technology:Unity3d','Technology:rest','UI Design','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2017',
             stop:'May 2022',
             title:'Chief Database Architect - RFID Logistics',
             extended:'Led schema development, database administration, and development of loading/management scripts. Database would grow to nearly 4 TB by 2021.Implemented various partitioning, meta status/summary tables, and loader optimizations to keep up with the growth of data, and maintain query performance at acceptable levels. ',
-            labels:['Current','Technology:PostgreSQL','Technology:SQL','Infrastructure','Technology:Machine Learning']}),
+            labels:['Technology:PostgreSQL','Technology:SQL','Infrastructure','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2017',
             stop:'May 2022',
             title:'RFID automated database loading',
             text:'Built pipeline to automomously load ~20 million rows of data generated by International Space Station into PostgreSQL every day',
             extended:'Wrote loader scripts utilizing incron file event monitoring, python generators and batch inserts to load files as they are continuously downlinked to our ground software from International Space Station. On average this consists of 20 million reads a day. Over the years following, the loader scripts would be updated to handle the various anomalies in data, while ensuring changes don’t have unintended consequences on the production database.',
-            labels:['Current','Language:Python','Technology:PostgreSQL','Technology:SQL','Infrastructure','Technology:Machine Learning']}),
+            labels:['Language:Python','Technology:PostgreSQL','Technology:SQL','Infrastructure','Technology:Machine Learning']}),
         BuildEntry({
             start:'Early 2017',
             title:'Abstract state Localization Engine for RFID',
