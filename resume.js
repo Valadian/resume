@@ -165,7 +165,7 @@ function ResumeModel(){
     this.experience = ko.observableArray([
         BuildEntry({
             start:'June 2022',
-            end:'October 2022',
+            stop:'October 2022',
             title:'Key Integrator - Eye & Face Tracking for Meta Quest Pro',
             text:'Integral for issues resolution of integration challenges of Eye & Face Tracking into the Unity Avatar SDK ',
             labels: ['Current', 'Virtual Reality','AR/VR','Hardware/Software Integration','Technology:Unity3d','Technology:Android','Language:C#']
@@ -178,6 +178,7 @@ function ResumeModel(){
             }),
         BuildEntry({
             start:'May 2022',
+            stop:'June 2022',
             title:'Meta Bootcamp',
             text:'Looking for team match in Augmented Reality, Virtual Reality, or Machine Learning',
             labels: ['Virtual Reality']
