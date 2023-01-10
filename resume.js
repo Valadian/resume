@@ -164,17 +164,30 @@ function ResumeModel(){
     ])
     this.experience = ko.observableArray([
         BuildEntry({
-            start:'March 2022',
+            start:'June 2022',
+            end:'October 2022',
+            title:'Key Integrator - Eye & Face Tracking for Meta Quest Pro',
+            text:'Integral for issues resolution of integration challenges of Eye & Face Tracking into the Unity Avatar SDK ',
+            labels: ['Current', 'Virtual Reality','AR/VR','Hardware/Software Integration','Technology:Unity3d','Technology:Android','Language:C#']
+            }),
+        BuildEntry({
+            start:'June 2022',
+            title:'Team Lead - Avatar SDK Integrations',
+            text:'Responsible for tasking 7 engineers, leading process automation, and ultimately responsible for the final step of the product delivery to customers',
+            labels: ['Current', 'Virtual Reality', 'Leadership', 'Process Improvement','Conflict Resolution','Team Building','AR/VR','Hardware/Software Integration','Technology:Unity3d','Technology:Android','Language:C#']
+            }),
+        BuildEntry({
+            start:'May 2022',
             title:'Meta Bootcamp',
             text:'Looking for team match in Augmented Reality, Virtual Reality, or Machine Learning',
-            labels: ['Current']
+            labels: ['Virtual Reality']
             }),
         BuildEntry({
             image:'content/meta.png',
             start:'May 2022',
             stop:'Present',
             title:'Started at Meta',
-            labels:['Employer'],
+            labels:['Current','Employer'],
             classes:'entry-company'}),
         BuildEntry({
             start:'March 2022',
