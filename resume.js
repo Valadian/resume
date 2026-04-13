@@ -164,17 +164,56 @@ function ResumeModel(){
     ])
     this.experience = ko.observableArray([
         BuildEntry({
+            start:'Late 2025',
+            title:'Chief Integrator - Avatar Platform & Meta Horizon Engine',
+            text:'Reporting directly to the Senior Director of Avatars. Primary technical authority at the intersection of the avatar platform and Meta Horizon game engine — across a 200+ person organization. Driving the architecture integrating avatars into the agentic world creation platform announced at Connect 2025.',
+            extended:'Serve as the chief technical integrator and problem-solver bridging the avatar platform and the Horizon engine organization. Principal driver of how avatars integrate into the agentic, AI-powered world creation platform showcased as a flagship at Connect 2025. Scope of influence spans the 200-person direct organization and hundreds of engineers across adjacent platform teams.',
+            labels: ['Current', 'Leadership', 'Infrastructure', 'Hardware/Software Integration', 'Mobile', 'Language:C++', 'Identity']
+        }),
+        BuildEntry({
+            start:'Early 2025',
+            stop:'Late 2025',
+            title:'Capabilities Tech Lead - Beyond Human Fantastical Avatars',
+            text:'Engineering authority over foundational capabilities for a 30-person product vertical — composed almost entirely of artists, technical artists, and PMs — delivering richer avatar materials and diverse body proportions. Acted as the technical bridge between ambitious creative goals and a large distributed engineering organization.',
+            extended:'While continuing to lead the avatar infrastructure pillar, took on a second role as the technical lead for the Fantastical Avatars product vertical. The team\'s ambitions — expressive surface materials and a broader range of body proportions — required coordinating engineering capacity from across the organization. Defined what was buildable, in what order, and by whom, translating a creatively-driven roadmap into engineering commitments across multiple teams.',
+            labels: ['Virtual Reality', 'Leadership', 'AR/VR', 'Team Building', 'Language:C++', 'Identity']
+        }),
+        BuildEntry({
+            start:'Late 2024',
+            title:'Engineering Lead - Avatar Infrastructure (20 → 30 engineers)',
+            text:'Called on as the only engineer in a 200-person organization with full-stack fluency across client and server systems to take ownership of the Avatar Infrastructure team. Grew the team from 20 to 30 engineers and transformed it from a reactive support function into a proactive, capability-driving organization.',
+            extended:'When the Avatar Infrastructure team lacked senior technical leadership, I was identified — out of a 200-person engineering organization — as uniquely positioned to lead it, given rare fluency across both client and server systems. Partnered with a senior engineering manager to grow the team and fundamentally shift its operating model: from reacting to the needs of others, to proactively building the foundational capabilities the entire avatar organization depended on.',
+            labels: ['Current', 'Virtual Reality', 'Leadership', 'Infrastructure', 'Team Building', 'Technology:Hack','Technology:Php', 'Technology:GraphQL', 'Cloud Systems', 'Language:C++', 'Identity']
+        }),
+        BuildEntry({
+            start:'Early 2024',
+            stop:'Late 2024',
+            title:'Architect & VR Launch Lead - Meta Avatar Style 2.0',
+            text:'Solely architected and built the test strategy for the unified identity infrastructure enabling a live, zero-downtime transition to a fully parametric avatar body system across the platform — then orchestrated the public launch',
+            extended:'Despite being embedded in a client-side team, stepped up to architect and build the entire infrastructure — spanning client and server — needed to run both the old and new avatar body systems simultaneously and switch over seamlessly in production. Coordinated the launch event personally: designed and brought a custom physical button for the product director to press, making the moment the new system went live for all users a milestone the whole organization witnessed together.',
+            labels: ['Accomplishments', 'Virtual Reality', 'Leadership', 'Team Building', 'Infrastructure', 'AR/VR', 'Technology:Unity3d', 'Language:C#', 'Hardware/Software Integration', 'Identity']
+        }),
+        BuildEntry({
+            start:'Early 2023',
+            stop:'Late 2024',
+            title:'Tech Lead - Real-Time Avatar Customization (London Team)',
+            text:'Tapped by senior leadership to lead a cross-timezone London team building real-time, on-device avatar customization — moving the avatar editing experience from a separate app into the VR home environment.',
+            extended:'Pulled out of existing responsibilities by directors to take on a remote team in London building a technically demanding feature: live avatar customization running directly within the VR home environment, on device, in real time. Provided end-to-end technical leadership across time zones — from architecture and scoping through to delivery.',
+            labels: ['Virtual Reality', 'Leadership', 'AR/VR', 'Technology:HorizonOS', 'Language:C++', 'Hardware/Software Integration']
+        }),
+        BuildEntry({
             start:'June 2022',
             stop:'October 2022',
             title:'Key Integrator - Eye & Face Tracking for Meta Quest Pro',
-            text:'Integral for issues resolution of integration challenges of Eye & Face Tracking into the Unity Avatar SDK ',
-            labels: ['Current', 'Virtual Reality','AR/VR','Hardware/Software Integration','Technology:Unity3d','Technology:Android','Language:C#']
+            text:'Integral for issues resolution of integration challenges of Eye & Face Tracking into the Unity Avatar SDK.',
+            labels: ['Virtual Reality','AR/VR','Hardware/Software Integration','Technology:Unity3d','Technology:Android','Language:C#']
             }),
         BuildEntry({
             start:'June 2022',
-            title:'Team Lead - Avatar SDK Integrations',
+            stop:'Late 2024',
+            title:'Team Lead - Avatar SDK Game Engine Integrations',
             text:'Responsible for tasking 7 engineers, leading process automation, and ultimately responsible for the final step of the product delivery to customers',
-            labels: ['Current', 'Virtual Reality', 'Leadership', 'Process Improvement','Conflict Resolution','Team Building','AR/VR','Hardware/Software Integration','Technology:Unity3d','Technology:Android','Language:C#']
+            labels: ['Virtual Reality', 'Leadership', 'Process Improvement','Conflict Resolution','Team Building','AR/VR','Hardware/Software Integration','Technology:Unity3d','Technology:Unreal','Technology:Android','Language:C#']
             }),
         BuildEntry({
             start:'May 2022',
